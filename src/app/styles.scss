@@ -1,0 +1,149 @@
+/* normalize */
+
+@import "./normalize.css";
+
+/* EDIT PARAMETERS */
+
+$bg-color: #EEF7F6;
+$green-grey-font: #7aA6A4;
+$green-grey-hover: #292f2e;
+$icon-dark-grey: #576361;
+$logo-black-color: #000;
+$footer-white-color: #fff;
+$img-sand-hover: #F0DEC6;
+
+/* */
+@mixin active-hover--grey-color {
+    color: $green-grey-hover;
+    border-bottom: solid 1px $green-grey-hover;
+}
+
+/*HEADER STYLE*/
+
+/* 1. nav-style */
+
+/* 1.1 logo */ 
+.main-nav_square {
+    border: solid 1px black;
+    font-size: 25px;
+    padding: 10px;
+    width: 110px;
+    text-align: center;
+    position: absolute;
+    top: 55px;
+    left: 110px;
+}
+
+.main-nav_logo {
+    color: $logo-black-color;
+}
+
+/* 1.2 menu */ 
+
+header {
+    margin: 0 12%;}
+
+.main-container {
+    background-color: $bg-color;
+    margin: 5% 5% 0 5%;
+}
+
+header {
+    margin: 0 12%;
+}
+
+.main-nav_items{
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 0 1% 0;
+
+    a {
+        color: $green-grey-font;
+
+        &:hover, &:active {
+            @include active-hover--grey-color;
+    }
+}
+}    
+
+/* SECTION STYLE */ 
+
+/* 2. gallery */
+
+.gallery {
+    margin: 0 9%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+}
+
+.gallery_item {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+
+    .gallery_caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    img {
+        max-width: 100%; 
+        box-sizing: border-box;
+        
+        &:hover {
+            border: solid 5px $img-sand-hover;
+        }   
+    }    
+}
+
+/*FOOTER*/ 
+
+/*3. footer*/ 
+
+footer {
+    background: $footer-white-color;
+    color: $green-grey-font;
+
+    .footer-nav {
+        margin: 0 12%;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+
+        &_el--left {
+            padding: 0;
+        }
+    }
+}
+
+.footer-nav_el--left a:hover {
+    color:  $icon-dark-grey;
+}
+
+.footer-nav_el--right {
+    display: flex;
+    
+    a {
+        margin-left: 5px;
+    }
+
+    i {
+        color: $green-grey-hover;
+
+        &:hover {
+            color: $icon-dark-grey;
+        }
+    }
+}
+
+.footer-nav_text {
+    color: $green-grey-hover;
+}
+
+

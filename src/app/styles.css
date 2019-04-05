@@ -1,0 +1,135 @@
+/* normalize */
+@import url(c:\Projekty\Daftacademy\src\app\normalize.css);
+/* EDIT PARAMETERS */
+/* */
+/*HEADER STYLE*/
+/* 1. nav-style */
+/* 1.1 logo */
+.main-nav_square {
+  border: solid 1px black;
+  font-size: 25px;
+  padding: 10px;
+  width: 110px;
+  text-align: center;
+  position: absolute;
+  top: 55px;
+  left: 110px;
+}
+
+.main-nav_square .main-nav_logo {
+  color: #000;
+}
+
+/* 1.2 menu */
+header {
+  margin: 0 12%;
+}
+
+.main-container {
+  background-color: #EEF7F6;
+  margin: 5% 5% 0 5%;
+  padding-bottom: 5%;
+}
+
+.main-container header {
+  margin: 0 12%;
+}
+
+.main-container header .main-nav_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10% 0 1% 0;
+}
+
+.main-container header .main-nav_items a {
+  color: #7aA6A4;
+}
+
+.main-container header .main-nav_items a:hover, .main-container header .main-nav_items a:active {
+  color: #292f2e;
+  border-bottom: solid 1px #292f2e;
+}
+
+/* SECTION STYLE */
+/* 2. gallery */
+.gallery {
+  margin: 0 9%;
+  padding-bottom: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery .gallery_item {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.gallery .gallery_item .gallery_caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.gallery .gallery_item img {
+  max-width: 100%;
+}
+
+/*FOOTER*/
+/*3. footer*/
+footer {
+  background: #fff;
+  color: #7aA6A4;
+}
+
+footer .footer-nav {
+  margin: 0 12%;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-nav_el--left {
+  padding: 0;
+}
+
+.footer-nav_el--left a:hover {
+  color: #576361;
+}
+
+.footer-nav_el--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav_el--right a {
+  margin-left: 5px;
+}
+
+.footer-nav_el--right i {
+  color: #292f2e;
+}
+
+.footer-nav_el--right i:hover {
+  color: #576361;
+}
+
+.footer-nav_text {
+  color: #292f2e;
+}
+/*# sourceMappingURL=styles.css.map */
